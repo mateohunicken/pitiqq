@@ -23,7 +23,7 @@ WORKDIR /root/
 
 # Copiar binario compilado
 COPY --from=builder /app/finanzas-api .
-COPY DATABASE_SCHEMA.sql .
+COPY ../DATABASE_SCHEMA.sql .
 
 # Exponer puerto
 EXPOSE 8080
